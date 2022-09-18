@@ -1,5 +1,8 @@
 ![LOGO COMPLETO](https://user-images.githubusercontent.com/113397997/190875735-0e9ea8a0-161e-49d4-8b1d-de55ac5f2877.png)
 # Presentación
+## Jose Armando Andrade Ramos 
+## Primer Semestre
+## Facultad de Ingeniería Mecánica y Electrica
 ## Problemas resueltos en clase con Diagramas de Flujo de Datos
 ### Ejercicio 1. Imprimir el nombre de una persona
 #### 1.1 Análisis
@@ -20,7 +23,7 @@ Ninguna, solo se imprime *"Armando"* a través de una salida de pantalla.
 Solo hay una salida de datos con el texto *"Sabado"*
 #### 2.2 Diagrama de flujode datos.
 DFD
-![Diagrama fluj Nombr](https://user-images.githubusercontent.com/113397997/190875041-cdc4912b-1c2c-414e-ad8d-e718261dd640.png)
+![DiaSem](https://user-images.githubusercontent.com/113397997/190886054-f01268b7-4c58-4467-9522-6345c5b0d7cb.png)
 #### 2.3 Prueba de Escritorio.
 | Pantalla     | Salida |
 | -------------| ------ |
@@ -187,7 +190,7 @@ Salida
 Se declaran dos contadores (Con y Suma) que empiezan en uno dentro de un proceso, se imprime Con, luego una condición verifica que Con sea igual a diez, si la condición no se cumple Con aumenta en 1 y Suma aumenta en Con y se vuelve a imprimir, el ciclo se repite hasta que el contador llegue a diez, entonces la condición se cumplirá y el diagrama terminará imprimiendo la suma de los numeros naturales.
 #### 13.2 Diagrama de flujo de Datos
 DFD
-![conSuma](https://user-images.githubusercontent.com/113397997/190881819-e013e28a-8101-4f0c-a1f7-4ebb3c8012eb.png)
+![SUMASI](https://user-images.githubusercontent.com/113397997/190882422-b20995d5-c752-4392-8e9f-97b7beb22f62.png)
 #### 13.3 Prueba de escritorio
 | Con  | Con=10    | Con=Con+1 | pantalla | Suma  |
 | -----| --------- | --------- | -------- | ----- |
@@ -205,4 +208,52 @@ DFD
 Ninguna, solo se declaran Con, Suma en 1
 #### 13.5 Salida 
 55 
-### Ejercicio 14. 
+### Ejercicio 14. Cuente los pares del 1 al 10 e imprima la suma
+#### 14.1 Analisis
+Se declaran dos contadores Con y Suma, ambos empiezan en dos, luego una condición verifica si el contador ha llegado a diez, si la condición no se cumple entonces a Con se le agregan 2 y después, a Suma se le agrega Con, hasta que la condición se cumpla, cuando se cumpla, se imprime Suma y termina el diagrama.
+#### 14.2 Diagrama de flujo de datos
+DFD
+![SumaPar](https://user-images.githubusercontent.com/113397997/190882605-229b8351-ffe5-4b18-8171-de3291f4742f.png)
+#### 14.3 Prueba de escritorio 
+| Con  | Con=10    | Con=Con+2 | pantalla | Suma  |
+| -----| --------- | --------- | -------- | ----- |
+|  2   |     No    |     2    |           |       |
+|  4   |     No    |     4    |           |       |
+|  6   |     No    |     6    |           |       |
+|  8   |     No    |     8    |           |       |
+|  10  |     SI    |     10   |    30     |   30  |
+#### 14.4 Entrada
+Ninguna, Solo se declaran las dos variables Con, Suma en 2
+#### 14.5 Salida
+30
+### Ejercicio 15. Captura un numero, imprime si es par o impar.
+#### 15.1 Analisis 
+En pantalla aparece "Dame un numero, te diré si es par", luego hay una entrada de datos con la variable N, seguido de la condición N=0, si la condición se cumple aparece en pantalla la leyenda "Tu numero no puede ser 0, introduzca otro" y regresa a la captura de N, si la condición no se cumple el diagrama sigue a la condición N%2==0, si la condición Si se cumple el aparece en pantalla "Tu numero es Par", si la condición No se cumpleaparece en pantalla "Tu numero es impar" de ambas formas el diagrama termina.
+#### 15.2 Diagrama de flujo de datos
+DFD
+![Par1nos](https://user-images.githubusercontent.com/113397997/190884110-93a3b0fb-82fe-45ec-ba82-dab92cc64f81.png)
+#### 15.3 Prueba de escritorio
+| N   | N==0    | salida   | 
+| --- | ------- | -------- |
+|  0  |   Si    |  Error   |
+|  4  |   No    | Es par   |
+| -6  |   No    | Es par   |
+| 3   |   NO    | Es impar |
+#### 15.4 Entradas
+0, 4, -6, 3 
+#### 15.5 Salidas
+"Tu numero no puede ser 0", "Tu numero es Par", "Tu numero es par", "Tu numero es impar".
+### 16. Captura n cantidad de numeros, imprime solo la suma de los pares.
+#### 16.1 Analisis
+Se asignan 4 variables TotN, NumCon, Suma y ConPar, todas con valor 0, seguido de la leyenda "Captura la cantidad de numeros que deseas ingresar" Luego una entrada de datos con la variable TotN, seguido de una condición TotN=<0, si la condición se cumple aparece en pantalla "Tu numero no puede ser 0 o negativo, vuelve a ingresar", si la condición no se cumple el diagrama sigue a una salida en pantalla "Captura tus numeros, recuerda que solo puedes capturar" TotN, Luego una entrada de datos con valor N, después un proceso que aumenta NumCon en 1, luego una condición NumCon=TotN, si la condición no se cumple aparece la condición N%2=0, si la condición se cumple la variable Suma aumenta en N y la variable ConPar aumenta en 1, luego vuelve a captura N, si la condición N%2=0 No se cumple vuelve a capturar N, Si la condición NunCon=TotN se cumple aparece otra condición Suma==0, si la condición se cumple aparece en pantalla "El promedio es " Suma/ConPar, si no se cumple aparece en pantalla "No CAPTURASTE NINGÚN NUMERO PAR" de ambas formas el diagrama termina.
+#### 16.2 Diagrama de flujo de datos
+DFD
+![NNumPar](https://user-images.githubusercontent.com/113397997/190885490-6701f2c1-cc2c-4023-aa77-f0f99531830f.png)
+#### 16.3 Prueba de Escritorio
+| Con  | Con=10    | Con=Con+2 | pantalla | Suma  |
+| -----| --------- | --------- | -------- | ----- |
+|  2   |     No    |     2    |           |       |
+|  4   |     No    |     4    |           |       |
+|  6   |     No    |     6    |           |       |
+|  8   |     No    |     8    |           |       |
+|  10  |     SI    |     10   |    30     |   30  |
