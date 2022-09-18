@@ -146,4 +146,63 @@ DFD
 23
 ### Ejercicio 11. Capture año de nacimiento, el año actual, verifique que ambos sean mayores que 0 después verifique que el año de nacimiento sea menor que el año actual y por ultimo calcule e imprima la edad.
 #### 11.1 Analisis
-Salida a pantalla "Dame tu año de nacimiento", seguido de entrada de datos con variable *a_nac*, luego una condición *a_nac>0* si no se cumple el aparece en pantalla "Tu año de nacimiento tiene que ser mayor a 0", "Vuelve a capturar", el diagrama vuelve a la captura de *a_nac*, si la condicion si se cumple se pide al usuario el año actual con la variale *a_act*, sigue la condición *a_act*>0, si la condición no se cumple la salida de pantalla dice "El año actual debe ser mayor a 0" luego "Vuelve a capturar" y regresa a la captura del año actual, si la condicion si se cumple el diagramas sigue a la condición.
+Salida a pantalla "Dame tu año de nacimiento", seguido de entrada de datos con variable *a_nac*, luego una condición *a_nac>0* si no se cumple el aparece en pantalla "Tu año de nacimiento tiene que ser mayor a 0", "Vuelve a capturar", el diagrama vuelve a la captura de *a_nac*, si la condicion si se cumple se pide al usuario el año actual con la variale *a_act*, sigue la condición *a_act*>0, si la condición no se cumple la salida de pantalla dice "El año actual debe ser mayor a 0" luego "Vuelve a capturar" y regresa a la captura del año actual, si la condicion si se cumple el diagramas sigue a la condición *a_nac<a_act* si la condición no secumple aparece en pantalla "Tu año de nacimiento no puede ser mayor al actual, vuelve a capturarlos" y el diagrama vuelve a la captura de a_nac, si la condición si se cumple aparece en pantalla "Tu edad es " a_act-a_nac y el diagrama termina.
+#### 11.2 Diagrama de flujo de datos
+DFD
+![Edad 3](https://user-images.githubusercontent.com/113397997/190879792-e6e73b38-70bb-4fd8-b9b5-ab98aa754a2d.png)
+#### 11.3 Prueba de escritorio 
+| a_nac | a_nac>0 | a_act | a_act>0 | a_nac<a_act | pantalla |
+| ----- | ------- | ----- | ------- | ----------- | -------- |
+| 1999  | si      | 2022  |    si   |    si       |    23    |
+#### 11.4 Entrada
+1999, 2022
+#### 11.5 Salida
+23
+### Ejercicio 12. Imprima la cuenta del 1 al 10
+#### 12.1 Analisis
+Se declara un contador que empieza en uno dentro de un proceso, luego se imprime dicho contador, luego una condición verifica que el contador sea igual a diez, si la condición no se cumple el acumulador aumenta en 1 y se vuelve a imprimir, el ciclo se repite hasta que el contador llegue a diez, entonces la condición se cumplirá y el diagrama terminará.
+#### 12.2 Diagrama de flujo de datos
+DFD
+![Cont1](https://user-images.githubusercontent.com/113397997/190881185-c7e6fc07-dab1-49bc-800c-d12f714080bf.png)
+#### 12.3 Prueba de escritorio 
+| Con  | Con=10    | Con=Con+1 | pantalla |
+| -----| --------- | --------- | -------- |
+|  1   |     No    |     2    |     1    |
+|  2   |     No    |     3    |     2    |
+|  3   |     No    |     4    |     3    |
+|  4   |     No    |     5    |     4    |
+|  5   |     No    |     6    |     5    |
+|  6   |     No    |     7    |     6    |
+|  7   |     No    |     8    |     7    |
+|  8   |     No    |     9    |     8    |
+|  9   |     No    |     10   |     9    |
+|  10  |     Si    |          |     10   |
+#### 12.4 Entrada 
+Ninguna, solo se declara el la variable contador en 1
+#### 12.5
+Salida
+1,2,3,4,5,6,7,8,9,10
+### Ejercicio 13 Imprime el resultado de la suma de los numeros naturales del 1 al 10
+#### 13.1 Analisis
+Se declaran dos contadores (Con y Suma) que empiezan en uno dentro de un proceso, se imprime Con, luego una condición verifica que Con sea igual a diez, si la condición no se cumple Con aumenta en 1 y Suma aumenta en Con y se vuelve a imprimir, el ciclo se repite hasta que el contador llegue a diez, entonces la condición se cumplirá y el diagrama terminará imprimiendo la suma de los numeros naturales.
+#### 13.2 Diagrama de flujo de Datos
+DFD
+![conSuma](https://user-images.githubusercontent.com/113397997/190881819-e013e28a-8101-4f0c-a1f7-4ebb3c8012eb.png)
+#### 13.3 Prueba de escritorio
+| Con  | Con=10    | Con=Con+1 | pantalla | Suma  |
+| -----| --------- | --------- | -------- | ----- |
+|  1   |     No    |     2    |           |   1   |
+|  2   |     No    |     3    |           |   3   |
+|  3   |     No    |     4    |           |   6   |
+|  4   |     No    |     5    |           |   10  |
+|  5   |     No    |     6    |           |   15  |
+|  6   |     No    |     7    |           |   21  |
+|  7   |     No    |     8    |           |   28  |
+|  8   |     No    |     9    |           |   36  |
+|  9   |     No    |     10   |           |   45  |
+|  10  |     Si    |          |    55     |   55  |
+#### 13.4 Entrada
+Ninguna, solo se declaran Con, Suma en 1
+#### 13.5 Salida 
+55 
+### Ejercicio 14. 
